@@ -5,8 +5,8 @@ from selenium.webdriver.common.keys import Keys
 import time
 
 # 🔐 Credenciales de BrowserStack
-BROWSERSTACK_USERNAME = 'TU_USUARIO'
-BROWSERSTACK_ACCESS_KEY = 'TU_CLAVE'
+BROWSERSTACK_USERNAME = 'jeanpc_Rn1Pzu'
+BROWSERSTACK_ACCESS_KEY = 'aHqMe1yDuiBHvBxgfEtY'
 
 # 🌐 Configuración remota
 bstack_options = {

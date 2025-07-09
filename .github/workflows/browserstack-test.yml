@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 name: Prueba en BrowserStack
 
@@ -25,3 +26,32 @@ jobs:
         BROWSERSTACK_ACCESS_KEY: ${{ qFxQwJxqHWAyXHABR9S7 }}
       run: |
         python test_google.py
+=======
+
+name: Prueba en BrowserStack
+
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Clonar repositorio
+      uses: actions/checkout@v3
+
+    - name: Configurar Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: 3.10
+
+    - name: Instalar dependencias
+      run: pip install selenium
+
+    - name: Ejecutar prueba con BrowserStack
+      env:
+        BROWSERSTACK_USERNAME: ${{ kardhidem_QrP5u4 }}
+        BROWSERSTACK_ACCESS_KEY: ${{ qFxQwJxqHWAyXHABR9S7 }}
+      run: |
+        python test_google.py
+>>>>>>> 71e173e4bb894c68faa964a5a50493f7a57c1603
